@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=PT+Serif&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'PT Serif', serif;
+}
+::-webkit-scrollbar
+{
+  border-radius: 10px;
+  background-color: rgb(187, 184, 184);
+  width: 4px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient-01
+{
+  position: absolute;
+  width: 300px;
+  height: 210px;
+  /* filter: blur(5px); */
+  background: #233e28;
+  bottom: 20%;
+  left: 20%;
+  z-index: -1;
+  border-radius: 1%;
+}
+
+@media only screen and (max-width: 640px){
+  .gradient-01
+  {
+    width: 244px;
+    height: 164px;
+    left: 16%;
+  }
+}
